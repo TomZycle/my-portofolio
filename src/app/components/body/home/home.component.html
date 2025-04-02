@@ -1,0 +1,35 @@
+<!-- <div class="glow"></div> Adds soft glowing effect -->
+
+<div [ngClass]="{'bg-home-dark': !isDarkMode, 'bg-home-light': isDarkMode}"
+  class="transition-colors duration-300 ease-in-out">
+  <div [ngClass]="{'bg-home-dark-2': !isDarkMode, 'bg-home-light-2': isDarkMode }"
+    class="transition-colors duration-300 ease-in-out">
+    <img class="absolute w-[40vw] opacity-10 dark:opacity-30 right-20 pointer-events-none" [src]="codeBg" alt="">
+
+    <div class="mt-40 ml-40 self-start">
+      <div class="flex flex-col justify-start">
+        <span class="text-[38px] text-white/20">FULL-STACK WEB DEVELOPER</span>
+        <!-- <div class="flex flex-row items-center">
+          <span class="text-[190px]">M</span>
+          <div class="flex flex-col items-start">
+            <span class="text-[86px] translate-y-7"><strong>S</strong>etio</span>
+            <span class="text-[86px] -translate-y-7"><strong>U</strong>tomo</span>
+          </div>
+        </div> -->
+        <div class="flex flex-col items-start">
+          <div class="flex flex-row">
+            <span class="text-[80px] translate-y-4">M</span>
+            <span class="text-[80px] translate-y-4 translate-x-2">Setio</span>
+          </div>
+          <div class="flex flex-col items-start">
+
+            <span class="text-[80px] -translate-y-7 tracking-[5px]">Utomo</span>
+          </div>
+        </div>
+        <span class="win-w-[200px] max-w-[250px] text-left">I'm a full-stack web developer and I work remotely from
+          Indonesia.</span>
+
+      </div>
+    </div>
+  </div>
+</div>

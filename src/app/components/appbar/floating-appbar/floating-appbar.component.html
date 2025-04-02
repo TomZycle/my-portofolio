@@ -1,0 +1,31 @@
+<nav
+  class="fixed flex flex-row justify-between items-center top-5 left-1/2 transform -translate-x-1/2 dark:bg-gray-900 bg-[#ffffff1a] dark:hover:bg-transparent hover:bg-gray-200 dark:bg-opacity-80 dark:text-white text-gray-900 px-6 py-3 rounded-full shadow-lg backdrop-blur-md space-x-4 w-[90%] transition-all duration-300">
+  <a href="#" class="hover:text-blue-400 dark:hover:text-sky-400 font-bold text-xl">M Setio Utomo</a>
+  <div class="flex flex-row gap-8 items-center">
+    <a href="#" class="hover:text-blue-400 dark:hover:text-sky-400">Home</a>
+    <a href="#" class="hover:text-blue-400 dark:hover:text-sky-400">About</a>
+    <a href="#" class="hover:text-blue-400 dark:hover:text-sky-400">Projects</a>
+    <a href="#" class="hover:text-blue-400 dark:hover:text-sky-400">Contact</a>
+    <div class="flex flex-row gap-1">
+      <div class="flex justify-center items-center dark:opacity-50">
+        <mat-icon>wb_sunny</mat-icon>
+      </div>
+      <button (click)="onToggleDarkMode()"
+        class="relative w-10 h-6 rounded-full bg-gray-300 dark:bg-fuchsia-500 flex items-center transition-all duration-300 p-1 ">
+        <div
+          class="w-4 h-4 bg-white dark:bg-white rounded-full shadow-md transform transition-all duration-300 dark:translate-x-4">
+        </div>
+      </button>
+      <div class="flex justify-center items-center dark:opacity-100 opacity-20">
+        <mat-icon>nightlight</mat-icon>
+      </div>
+    </div>
+    <button
+      class="px-4 py-2 dark:bg-linear-[90deg,fuchsia_0%,indigo_100%] hover:dark:bg-linear-[90deg,fuchsia_0%,pink_100%] bg-white hover:bg-gray-300 rounded-full transition-all duration-300 dark:duration-300 dark:transition-bg">
+      <div class="flex flex-row items-center justify-center space-x-2">
+        <span class="duration-0 font-bold">HIRE ME</span>
+        <mat-icon style="font-size: 15px; width: 16px; height: 16px; font-weight: 1000;">south_east</mat-icon>
+      </div>
+    </button>
+  </div>
+</nav>
